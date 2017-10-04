@@ -1,0 +1,29 @@
+<h1>Users#index</h1>
+<p>Find me in app/views/users/index.html.erb</p>
+
+<% (1..5).each do |i| %>
+<%= i %>
+<% end %>
+<p>with &lt = x is printed
+<%= x= 5 %>
+</p>
+
+<p>Printing x: <%= x %></p>
+
+<p>without &lt =
+<%x= 9 %>
+</p>
+
+<p>Printing x: <%= x %></p>
+
+<!--<p>Printing @name using instance variable:  <%= @name%></p>-->
+
+<p>Printing All Users' Data 
+<ul> 
+<% @users.each do |u| %>
+ <%=u.name%> 
+ <br>
+ <% end %> 	
+ </ul>
+ </p>
+
